@@ -18,3 +18,7 @@ This is a repo going over the steps taken during the fourth lessons of the Londo
     - uncomment the script and css and check the error
     - create new route to serve js
     - copy/paste for css
+    - use express static instead
+
+* form and post
+    - create route for the `newsletter.html` page
