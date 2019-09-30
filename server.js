@@ -1,6 +1,9 @@
 const express = require("express");
+const fs = require("fs-extra");
 
 const app = express();
+
+app.use(express.urlencoded());
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
@@ -13,6 +16,10 @@ app.get("/", (request, response) => {
 
 app.get("/newsletter", (request, response) => {
   response.sendFile(__dirname + "/newsletter.html");
+});
+
+app.post("/register", (request, response) => {
+  response.send("request received, thank you");
 });
 
 // static file serving, see: https://expressjs.com/en/starter/static-files.html

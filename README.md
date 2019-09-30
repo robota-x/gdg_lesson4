@@ -22,3 +22,4 @@ This is a repo going over the steps taken during the fourth lessons of the Londo
 
 * form and post
     - create route for the `newsletter.html` page
+    - handle request by saving it to file and sending a success message
