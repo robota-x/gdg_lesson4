@@ -17,3 +17,4 @@ This is a repo going over the steps taken during the fourth lessons of the Londo
 * serve multiple files
     - uncomment the script and css and check the error
     - create new route to serve js
+    - copy/paste for css

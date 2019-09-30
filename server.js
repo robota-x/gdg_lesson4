@@ -15,4 +15,8 @@ app.get("/static/main.js", (request, response) => {
   response.sendFile(__dirname + "/static/main.js");
 });
 
+app.get("/static/main.css", (request, response) => {
+  response.sendFile(__dirname + "/static/main.css");
+});
+
 app.listen(3000, () => console.log("server listening on port 3000"));
