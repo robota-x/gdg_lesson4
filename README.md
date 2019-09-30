@@ -13,3 +13,7 @@ This is a repo going over the steps taken during the fourth lessons of the Londo
     - send a string as a response
     - inspect the cookie-cutter html file and remember the js script
     - send the file instead
+
+* serve multiple files
+    - uncomment the script and css and check the error
+    - create new route to serve js
