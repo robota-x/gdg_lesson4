@@ -11,12 +11,7 @@ app.get("/", (request, response) => {
   */
 });
 
-app.get("/static/main.js", (request, response) => {
-  response.sendFile(__dirname + "/static/main.js");
-});
-
-app.get("/static/main.css", (request, response) => {
-  response.sendFile(__dirname + "/static/main.css");
-});
+// static file serving, see: https://expressjs.com/en/starter/static-files.html
+app.use(express.static('public'));
 
 app.listen(3000, () => console.log("server listening on port 3000"));
