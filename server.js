@@ -3,7 +3,7 @@ const fs = require("fs-extra");
 
 const app = express();
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 
 app.get("/", (request, response) => {
   response.sendFile(__dirname + "/index.html");
@@ -19,6 +19,12 @@ app.get("/newsletter", (request, response) => {
 });
 
 app.post("/register", (request, response) => {
+  const newEmail = request.body.email;
+
+  const registrationListFileName = "data/registrationList.txt";
+  fs.ensureFile(registrationListFileName)
+    .then(() => fs.appendFile(registrationListFileName, `${newEmail}\n`));
+
   response.send("request received, thank you");
 });
 
