@@ -1,0 +1,16 @@
+{
+  "name": "lesson_4",
+  "version": "1.0.0",
+  "description": "This is a repo going over the steps taken during the fourth lessons of the London GDG group JS course.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
